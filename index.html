@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home Work JS extra</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container main_content">
+        <div class="row  info ">
+            <div class="col-sm-6 inner__box ">
+
+                <h3>Tiền ủng hộ theo doanh thu phim</h3>
+                <div class="form-group ">
+                    <label for="">Nhập tên phim</label>
+                    <div class="d-flex"> <input id="txtName" type="text" class="form-control" /></div>
+                </div>
+
+
+                <div class="form-group ">
+                    <label for="">Giá vé </label>
+                    <div class="d-flex"><input id="nPrice" type="number" class="form-control" /></div>
+                    <div class="warning text-warning">Trẻ em dưới 12 tuổi được giảm 50% giá vé</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 form-group ">
+                        <label for="">Tổng vé người lớn</label>
+                        <div class="d-flex"><input id="nAdultNumber" type="number" class="form-control" /></div>
+                    </div>
+                    <div class="col-sm-6 form-group ">
+                        <label for="">Tổng vé trẻ em</label>
+                        <div class="d-flex"><input id="nChildNumber" type="number" class="form-control" /></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="">Bạn muốn quyên gó bao nhiêu</label>
+                        <select class="form-control" id="charity">
+                            <option value="0">Chọn tỉ lệ quyên góp</option>
+                            <option value="30">30%</option>
+                            <option value="20">20%</option>
+                            <option value="15">15%</option>
+                            <option value="10">10%</option>
+                            <option value="5">5%</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="btnSubmit" class="btn">Submit</button>
+                <div class="danger text-danger"></div>
+            </div>
+
+        </div>
+
+        <div class="showResult d-none">
+            <table class="table table-bordered my-5">
+                <tbody>
+                    <tr>
+                        <td>Tên phim</td>
+                        <td id="nameResult"></td>
+                    </tr>
+                    <tr>
+                        <td>Số vé đã bán</td>
+                        <td id="numberResult"></td>
+                    </tr>
+                    <tr>
+                        <td>Doanh thu</td>
+                        <td id="revenueResult"></td>
+                    </tr>
+                    <tr>
+                        <td>Trích % từ thiện</td>
+                        <td id="charityPercent"></td>
+                    </tr>
+                    <tr>
+                        <td>Số tiền trích từ thiện</td>
+                        <td id="charityResult"></td>
+                    </tr>
+                    <tr>
+                        <td>Lợi nhuận cuối</td>
+                        <td id="income"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="./main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.main_content h3 {
+    text-align: center;
+    background-color: rgb(30, 3, 15);
+    color: white;
+    font-family: serif;
+    height: 20px;
+    height: 50px;
+    padding-top: 10px;
+  }
+  
+  .main_content .info {
+    justify-content: center;
+  }
+  
+  .info .inner__box {
+    border: 1px solid gray;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 20px;
+    height: 600px;
+  }
+  
+  .inner__box button {
+    margin: 20px 195px;
+    width: 150px;
+    background-color: rgb(163, 19, 52);
+    color: white;
+    font-weight: 600;
+  }
